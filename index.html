@@ -79,10 +79,26 @@
   </style>
 </head>
 <body>
+
+  <!-- 🎵 Jingle Player -->
+  <audio id="jingle" autoplay muted>
+    <source src="Wndrtrip Anthem.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Unmute and play after first user interaction
+    window.addEventListener('click', () => {
+      const audio = document.getElementById('jingle');
+      audio.muted = false;
+      audio.play().catch(() => {});
+    }, { once: true });
+  </script>
+
   <header>
     <h1>Wndrtrip</h1>
     <p>Curated adventures. Real connections. Travel reimagined.</p>
-    <a href="#explore" class="cta-button">Explore Trips</a>
+    <a href="form.html" class="cta-button">Join Us</a>
   </header>
 
   <section id="explore">

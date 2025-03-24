@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Wndrtrip</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e3c72;
+      margin-bottom: 25px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 6px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    input, textarea, select {
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .checkbox-group {
+      margin-bottom: 20px;
+    }
+
+    .checkbox-group label {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    button {
+      padding: 14px;
+      background-color: #1e3c72;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2a5298;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Join Wndrtrip</h1>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="age">Your Age Range</label>
+      <select id="age" name="age">
+        <option value="">-- Please select --</option>
+        <option>Under 18</option>
+        <option>18–24</option>
+        <option>25–34</option>
+        <option>35–44</option>
+        <option>45+</option>
+      </select>
+
+      <label for="location">City or Country</label>
+      <input type="text" id="location" name="location" />
+
+      <label for="role">Are you a traveler or a content creator?</label>
+      <select id="role" name="role" required>
+        <option value="">-- Please select --</option>
+        <option value="traveler">Traveler</option>
+        <option value="creator">Content Creator</option>
+        <option value="both">Both</option>
+      </select>
+
+      <label for="interests">What kind of trips are you most interested in?</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="interests" value="Surfing"> Surfing</label>
+        <label><input type="checkbox" name="interests" value="Hiking"> Hiking</label>
+        <label><input type="checkbox" name="interests" value="Cultural Experiences"> Cultural Experiences</label>
+        <label><input type="checkbox" name="interests" value="Festivals"> Festivals</label>
+        <label><input type="checkbox" name="interests" value="Backpacking"> Backpacking</label>
+        <label><input type="checkbox" name="interests" value="Road Trips"> Road Trips</label>
+        <label><input type="checkbox" name="interests" value="Food & Wine"> Food & Wine</label>
+        <label><input type="checkbox" name="interests" value="Remote Work Adventures"> Remote Work Adventures</label>
+      </div>
+
+      <label for="destinations">Ideal Destinations</label>
+      <input type="text" id="destinations" name="destinations" placeholder="Sri Lanka, Peru, Japan..." />
+
+      <label for="season">When are you likely to travel next?</label>
+      <select id="season" name="season">
+        <option value="">-- Please select --</option>
+        <option>Spring</option>
+        <option>Summer</option>
+        <option>Fall</option>
+        <option>Winter</option>
+        <option>Not sure yet</option>
+      </select>
+
+      <label for="group-size">Preferred Group Size</label>
+      <select id="group-size" name="group-size">
+        <option value="">-- Please select --</option>
+        <option>Small group (6–10)</option>
+        <option>Medium group (10–20)</option>
+        <option>Large group (20+)</option>
+        <option>Solo-friendly but social</option>
+      </select>
+
+      <label for="referral">How did you hear about Wndrtrip?</label>
+      <select id="referral" name="referral">
+        <option value="">-- Please select --</option>
+        <option>Instagram</option>
+        <option>TikTok</option>
+        <option>Friend</option>
+        <option>Google/Search</option>
+        <option>Other</option>
+      </select>
+
+      <label for="comments">Anything else you'd like us to know?</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your vibe, goals, or dream trip..."></textarea>
+
+      <label>
+        <input type="checkbox" name="newsletter" />
+        Yes, I want early access to upcoming trips!
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
